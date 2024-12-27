@@ -1,0 +1,120 @@
+/* Общие стили для всего документа */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #1e1e1e; /* Темный фон */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Стиль для контейнера формы бронирования */
+.container {
+	background: #2c2c2c; /* Темный фон для контейнера */
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	width: 400px;
+	box-sizing: border-box;
+	color: #fff; /* Белый текст */
+}
+
+/* Стиль для заголовка */
+h1 {
+	font-size: 24px;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #fff; /* Белый цвет для заголовка */
+}
+
+/* Стили для полей формы */
+input, select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #555; /* Темная рамка */
+	box-sizing: border-box;
+	font-size: 16px;
+	background-color: #444; /* Темный фон для полей */
+	color: #fff; /* Белый текст в полях */
+}
+
+/* Стиль для кнопок */
+button {
+	width: 100%;
+	padding: 12px;
+	background-color: #4CAF50; /* Зеленый цвет для кнопок */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-bottom: 10px; /* Добавляем немного пространства между кнопками */
+}
+
+/* Уникальные стили для кнопки удаления */
+button.delete {
+	background-color: #f44336; /* Красный цвет для кнопки удаления */
+}
+
+button.delete:hover {
+	background-color: #e53935; /* Немного темнее при наведении */
+}
+
+/* Уникальные стили для кнопки редактирования */
+button.edit {
+	background-color: #ff9800; /* Оранжевый цвет для кнопки редактирования */
+}
+
+button.edit:hover {
+	background-color: #fb8c00; /* Немного темнее при наведении */
+}
+
+/* Добавление анимации при наведении на кнопку */
+button:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Добавление анимации для кнопки в активном состоянии */
+button:active {
+	transform: scale(1);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимация для перехода фонового цвета */
+input:focus, select:focus {
+	border-color: #4CAF50;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+/* Стили для контейнера ошибок */
+.error-message {
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* Плавный переход для появления уведомлений */
+.notification {
+	display: none;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #f44336;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Показ уведомления */
+.notification.show {
+	display: block;
+}
+
